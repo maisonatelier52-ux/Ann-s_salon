@@ -531,7 +531,7 @@ export default function ThreadingPage() {
               </div>
 
               <a
-                href="#"
+                href="/contact_us"
                 className="group flex items-center justify-between px-10 py-5 font-black uppercase text-xs tracking-widest border transition-all hover:border-[#8b6d50] hover:text-[#8b6d50]"
                 style={{ borderColor: "rgba(139,109,80,0.2)", color: "#a08060", fontFamily: "'Arial Black', Arial, sans-serif", letterSpacing: "0.12em" }}
               >

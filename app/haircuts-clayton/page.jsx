@@ -384,7 +384,7 @@ export default function HaircutsPage() {
 
               {/* Request a time */}
               <a
-                href="#"
+                href="/contact_us"
                 className="group flex items-center justify-between px-10 py-5 text-stone-400 font-black uppercase text-xs tracking-widest border transition-all hover:border-[#c9a96e] hover:text-[#c9a96e]"
                 style={{ borderColor: "rgba(255,255,255,0.1)", fontFamily: "'Arial Black', Arial, sans-serif", letterSpacing: "0.12em" }}
               >

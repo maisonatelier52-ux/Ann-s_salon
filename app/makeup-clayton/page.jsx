@@ -537,7 +537,7 @@ export default function MakeupPage() {
 
               {/* Secondary */}
               <a
-                href="#"
+                href="/contact_us"
                 className="group flex items-center justify-between px-10 py-5 text-stone-500 font-black uppercase text-xs tracking-widest border transition-all hover:border-[#c9a96e] hover:text-[#c9a96e]"
                 style={{ borderColor: "rgba(201,169,110,0.12)", fontFamily: "'Arial Black', Arial, sans-serif", letterSpacing: "0.12em" }}
               >

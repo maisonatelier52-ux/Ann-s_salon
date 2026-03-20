@@ -549,7 +549,7 @@ export default function WaxingPage() {
 
               {/* Secondary */}
               <a
-                href="#"
+                href="/contact_us"
                 className="group flex items-center justify-between px-10 py-5 font-black uppercase text-xs tracking-widest border transition-all hover:border-[#b48c8c] hover:text-[#b48c8c]"
                 style={{ borderColor: "rgba(180,140,140,0.25)", color: "#b4a0a0", fontFamily: "'Arial Black', Arial, sans-serif", letterSpacing: "0.12em" }}
               >
