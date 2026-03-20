@@ -5,10 +5,10 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const quickLinks = [
-  { name: "Haircuts", href: "/haircuts-clayton" },
-  { name: "Threading", href: "/threading-clayton" },
-  { name: "Waxing", href: "/waxing-clayton" },
-  { name: "Makeup", href: "/makeup-clayton" },
+  { name: "Haircuts", href: "/haircuts" },
+  { name: "Threading", href: "/threading" },
+  { name: "Waxing", href: "/waxing" },
+  { name: "Makeup", href: "/makeup" },
   { name: "Reviews", href: "/reviews" },
   { name: "Book a Slot", href: "/booking" },
 ];
@@ -19,6 +19,12 @@ const contactDetails = [
     label: "Studio Address",
     lines: ["2025 Dandenong Rd,", "Clayton VIC 3168,", "Australia"],
     action: { text: "Get Directions →", href: "https://maps.app.goo.gl/iQ4hG5RH142W3svY9" },
+  },
+  {
+    icon: "📞",
+    label: "Call or WhatsApp",
+    lines: ["+61 3 XXXX XXXX", "Mon–Sat: 9:00 AM – 6:00 PM", "Sun: 10:00 AM – 4:00 PM"],
+    action: { text: "Call Now →", href: "tel:+613XXXXXXXX" },
   },
   {
     icon: "🕐",
@@ -56,20 +62,28 @@ export default function ContactPage() {
     if (errors[key]) setErrors((prev) => ({ ...prev, [key]: "" }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const errs = validate();
     if (Object.keys(errs).length > 0) { setErrors(errs); return; }
 
-    // Build mailto link with form details
-    const subject = encodeURIComponent(form.subject || "General Enquiry");
-    const body = encodeURIComponent(
-      `Name: ${form.name}\nPhone: ${form.phone || "Not provided"}\nEmail: ${form.email}\n\nMessage:\n${form.message}`
-    );
-    window.location.href = `mailto:${process.env.NEXT_PUBLIC_CONTACT_EMAIL || "anns.salon@gmail.com"}?subject=${subject}&body=${body}`;
-
-    setStatus("sent");
-    setForm({ name: "", email: "", phone: "", subject: "", message: "" });
+    setStatus("sending");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setStatus("sent");
+        setForm({ name: "", email: "", phone: "", subject: "", message: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -134,7 +148,7 @@ export default function ContactPage() {
       {/* ══ CONTACT CARDS ════════════════════ */}
       <section className="w-full" style={{ backgroundColor: "#faf8f5" }}>
         <div className="max-w-7xl mx-auto px-8 lg:px-20 py-20">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-px" style={{ backgroundColor: "rgba(0,0,0,0.07)" }}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px" style={{ backgroundColor: "rgba(0,0,0,0.07)" }}>
             {contactDetails.map((c) => (
               <div
                 key={c.label}
@@ -289,14 +303,20 @@ export default function ContactPage() {
                   </p>
                 )}
 
+                {status === "error" && (
+                  <p className="text-sm text-center" style={{ fontFamily: "Georgia, serif", color: "#c0392b" }}>
+                    ⚠ Something went wrong. Please try again or call us directly.
+                  </p>
+                )}
+
                 <button
                   type="submit"
-                  disabled={false}
+                  disabled={status === "sending"}
                   className="flex items-center justify-between px-10 py-5 font-black uppercase text-sm tracking-widest transition-all hover:brightness-95 hover:scale-[1.01]"
-                  style={{ backgroundColor: "#0a0808", color: "#c9a96e", fontFamily: "'Arial Black', Arial, sans-serif", letterSpacing: "0.12em" }}
+                  style={{ backgroundColor: status === "sending" ? "#a88a50" : "#0a0808", color: "#c9a96e", fontFamily: "'Arial Black', Arial, sans-serif", letterSpacing: "0.12em", cursor: status === "sending" ? "not-allowed" : "pointer" }}
                 >
-                  <span>Send Message</span>
-                  <span className="text-xl">→</span>
+                  <span>{status === "sending" ? "Sending..." : "Send Message"}</span>
+                  <span className="text-xl">{status === "sending" ? "⏳" : "→"}</span>
                 </button>
               </form>
             )}
@@ -328,6 +348,10 @@ export default function ContactPage() {
                 2025 Dandenong Rd<br />
                 Clayton VIC 3168<br />
                 Australia
+              </p>
+              <p className="text-sm mt-3" style={{ fontFamily: "Georgia, serif", color: "#a89070", lineHeight: 1.8 }}>
+                📞 <a href="tel:+613XXXXXXXX" style={{ color: "#c9a96e" }}>+61 3 XXXX XXXX</a><br />
+                📩 <a href="mailto:anns.salon@gmail.com" style={{ color: "#c9a96e" }}>anns.salon@gmail.com</a>
               </p>
               <a
                 href="https://maps.app.goo.gl/iQ4hG5RH142W3svY9"
