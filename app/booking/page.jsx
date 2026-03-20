@@ -1036,7 +1036,7 @@ export default function BookingPage() {
                   <button
                     key={s.id}
                     onClick={() => setSelectedService(s.id)}
-                    className="group relative flex flex-col gap-4 p-7 text-left transition-all duration-200"
+                    className="group relative flex flex-col gap-4 p-7 text-left transition-all duration-200 cursor-pointer"
                     style={{
                       backgroundColor: selectedService === s.id ? "#0a0808" : "#fff",
                       border: selectedService === s.id ? `2px solid ${s.color}` : "2px solid rgba(0,0,0,0.08)",
@@ -1085,7 +1085,7 @@ export default function BookingPage() {
                     <button
                       key={a.id}
                       onClick={() => toggleAddon(a.id)}
-                      className="flex items-center justify-between px-6 py-4 text-left transition-all"
+                      className="flex items-center justify-between px-6 py-4 text-left transition-all cursor-pointer"
                       style={{
                         backgroundColor: selectedAddons.includes(a.id) ? "#0a0808" : "#fff",
                         border: selectedAddons.includes(a.id) ? "2px solid #c9a96e" : "2px solid rgba(0,0,0,0.08)",
@@ -1193,7 +1193,7 @@ export default function BookingPage() {
                     <button
                       key={t}
                       onClick={() => setSelectedTime(t)}
-                      className="px-3 py-3 text-xs font-black uppercase tracking-wider transition-all"
+                      className="px-3 py-3 text-xs font-black uppercase tracking-wider transition-all cursor-pointer"
                       style={{
                         fontFamily: "'Arial Black', Arial, sans-serif",
                         backgroundColor: selectedTime === t ? "#0a0808" : "#fff",
@@ -1211,7 +1211,7 @@ export default function BookingPage() {
               <div className="flex gap-3">
                 <button
                   onClick={() => setStep(0)}
-                  className="flex items-center gap-2 px-8 py-5 font-black uppercase text-xs tracking-widest border"
+                  className="flex items-center gap-2 px-8 py-5 font-black uppercase text-xs tracking-widest border cursor-pointer"
                   style={{ borderColor: "rgba(0,0,0,0.15)", color: "#666", fontFamily: "'Arial Black', Arial, sans-serif" }}
                 >
                   ← Back
@@ -1353,7 +1353,7 @@ export default function BookingPage() {
               <div className="flex gap-3">
                 <button
                   onClick={() => setStep(1)}
-                  className="flex items-center gap-2 px-8 py-5 font-black uppercase text-xs tracking-widest border"
+                  className="flex items-center gap-2 px-8 py-5 font-black uppercase text-xs tracking-widest border cursor-pointer"
                   style={{ borderColor: "rgba(0,0,0,0.15)", color: "#666", fontFamily: "'Arial Black', Arial, sans-serif" }}
                 >
                   ← Back

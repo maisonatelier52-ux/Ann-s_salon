@@ -28,14 +28,7 @@ const navLinks = [
     name : "REVIEWS",
     href : "/reviews"
   },
-   {
-    name : "CAREERS",
-    href : "/careers"
-  },
-   {
-    name : "EDUCATION",
-    href : "/education"
-  },
+ 
    {
     name : "ABOUT",
     href : "/about"
@@ -156,7 +149,7 @@ export default function Header() {
             <button
               onClick={() => setMenuOpen(false)}
               aria-label="Close menu"
-              className="hidden lg:flex text-2xl text-black hover:opacity-70 transition-opacity"
+              className="hidden lg:flex text-2xl text-black hover:opacity-70 transition-opacity cursor-pointer"
             >
               <RxCross2 />
             </button>
@@ -168,11 +161,11 @@ export default function Header() {
 
             {/* Desktop: CTA buttons */}
             <div className="hidden lg:flex items-center gap-2">
-              <button className="border-2 border-black text-black font-black text-xs px-4 py-2 uppercase tracking-wider hover:bg-black hover:text-white transition-colors whitespace-nowrap">
+              <button className="border-2 border-black text-black font-black text-xs px-4 py-2 uppercase tracking-wider hover:bg-black hover:text-white transition-colors whitespace-nowrap cursor-pointer">
                 BOOK A SLOT
               </button>
-              <button className="border-2 border-black text-black font-black text-xs px-4 py-2 uppercase tracking-wider hover:bg-black hover:text-white transition-colors whitespace-nowrap">
-                SHOP ONLINE
+              <button className="border-2 border-black text-black font-black text-xs px-4 py-2 uppercase tracking-wider hover:bg-black hover:text-white transition-colors whitespace-nowrap cursor-pointer">
+                CONTACT US
               </button>
             </div>
 
