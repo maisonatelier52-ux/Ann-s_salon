@@ -493,7 +493,7 @@ export default function ThreadingPage() {
                 Prefer a specific time? Use the request form and we'll confirm shortly.
               </p>
               <a
-                href="/testimonials"
+                href="/reviews"
                 className="inline-flex items-center gap-3 mt-8 text-xs uppercase tracking-widest border-b pb-1 hover:opacity-70 transition-opacity"
                 style={{ fontFamily: "'Arial Black', Arial, sans-serif", color: "#8b6d50", borderColor: "#8b6d50" }}
               >

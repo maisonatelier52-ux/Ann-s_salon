@@ -26,10 +26,6 @@ const quickLinks = [
 {
    name: "Makeup",
   href : "/makeup-clayton"
-},
-{
-   name: "Beauty Tips Blog",
-  href : "/beauty-tips-clayton"
 }]
 
 function FAQItem({ q, a }) {
@@ -275,10 +271,10 @@ export default function HaircutsPage() {
               FIND<br />US HERE.
             </h2>
             <p className="text-stone-400 text-sm leading-relaxed mb-6" style={{ fontFamily: "Georgia, serif" }}>
-              Barkat Villa, Shop No 2/3, Zen 11<br />Maratha Colony, Dahisar East<br />Mumbai, Maharashtra 400068<br />India
+              2025 Dandenong Rd,<br /> Clayton VIC 3168,<br /> Australia
             </p>
             <a
-              href="https://maps.app.goo.gl/iQ4hG5RH142W3svY9"
+              href="https://www.google.com/maps/search/?api=1&query=2025%20Dandenong%20Rd%2C%20Clayton%20VIC%203168%2C%20Australia"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-[#c9a96e] text-xs uppercase tracking-widest border-b pb-1 hover:opacity-70 transition-opacity"
@@ -288,7 +284,7 @@ export default function HaircutsPage() {
             </a>
             <div className="mt-10 w-full overflow-hidden" style={{ height: "220px", border: "1px solid rgba(201,169,110,0.2)" }}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.2!2d72.8597!3d19.2183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b1e0b8e3b1b1%3A0x1!2sBarkat+Villa+Shop+No+2%2F3+Zen+11+Maratha+Colony+Dahisar+East+Mumbai+Maharashtra+400068!5e0!3m2!1sen!2sin!4v1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3147.539952101174!2d145.1333781!3d-37.9178145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad66ad26cd703d1%3A0xddc40d2c5a480322!2s2025%20Dandenong%20Rd%2C%20Clayton%20VIC%203168%2C%20Australia!5e0!3m2!1sen!2ssa!4v1773999792981!5m2!1sen!2ssa"
                 width="100%"
                 height="220"
                 style={{ border: 0, filter: "grayscale(20%) contrast(1.05)" }}
@@ -356,7 +352,7 @@ export default function HaircutsPage() {
               <p className="text-stone-600 text-xs mt-4 italic" style={{ fontFamily: "Georgia, serif" }}>
                 Prefer a specific time? Use the form and we'll confirm shortly.
               </p>
-              <a href="/testimonials" className="inline-flex items-center gap-3 mt-8 text-[#c9a96e] text-xs uppercase tracking-widest border-b pb-1 hover:opacity-70 transition-opacity" style={{ fontFamily: "'Arial Black', Arial, sans-serif", borderColor: "#c9a96e" }}>
+              <a href="/reviews" className="inline-flex items-center gap-3 mt-8 text-[#c9a96e] text-xs uppercase tracking-widest border-b pb-1 hover:opacity-70 transition-opacity" style={{ fontFamily: "'Arial Black', Arial, sans-serif", borderColor: "#c9a96e" }}>
                 See Reviews →
               </a>
             </div>

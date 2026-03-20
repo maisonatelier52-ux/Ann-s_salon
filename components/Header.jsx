@@ -26,7 +26,7 @@ const navLinks = [
   },
   {
     name : "REVIEWS",
-    href : "/testimonials"
+    href : "/reviews"
   },
    {
     name : "CAREERS",
@@ -42,13 +42,14 @@ const navLinks = [
   },
    {
     name : "CONTACT",
-    href : "/contact"
+    href : "/contact_us"
   },
 ];
 
 /* ── Reusable Logo ────────────────────────────────────────────── */
 function Logo() {
   return (
+    <Link href={"/"}>
     <div className="flex items-center gap-2">
       <span
         className="text-black font-black tracking-tight leading-none select-none"
@@ -91,7 +92,7 @@ function Logo() {
           WEEK
         </span>
       </div>
-    </div>
+    </div></Link>
   );
 }
 
@@ -126,9 +127,10 @@ export default function Header() {
             <button className="border-2 border-black text-black font-black text-xs px-4 py-2 uppercase tracking-wider hover:bg-black hover:text-white transition-colors whitespace-nowrap cursor-pointer">
               BOOK A SLOT
             </button></Link>
+            <Link href={"/contact_us"}>
             <button className="border-2 border-black text-black font-black text-xs px-4 py-2 uppercase tracking-wider hover:bg-black hover:text-white transition-colors whitespace-nowrap cursor-pointer">
-              SHOP ONLINE
-            </button>
+              CONTACT US
+            </button></Link>
           </div>
 
           {/* Hamburger — mobile/tablet only, right side */}
