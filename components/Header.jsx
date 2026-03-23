@@ -52,7 +52,8 @@ function Logo() {
           letterSpacing: "-0.13em",
         }}
       >
-        TONI&amp;GUY
+        {/* TONI&amp;GUY */}
+        ANN'S
       </span>
 
       {/* OFFICIAL PARTNER — vertical, bottom to top */}
@@ -78,11 +79,11 @@ function Logo() {
             lineHeight: 0.80,
           }}
         >
-          LONDON
+          HAIRCUTS &
           <br />
-          FASHION
+          BEAUTY
           <br />
-          WEEK
+          SALOON
         </span>
       </div>
     </div></Link>

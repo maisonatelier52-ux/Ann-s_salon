@@ -3,6 +3,7 @@
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 function page() {
@@ -38,7 +39,8 @@ function page() {
                   >
                     WELCOME TO
                     <br />
-                    TONI&amp;GUY
+                    {/* TONI&amp;GUY */}
+                    ANN'S Haircuts & beauty salon
                   </h1>
                   <p
                     className="text-white mt-5 max-w-sm text-sm leading-relaxed opacity-95"
@@ -48,18 +50,22 @@ function page() {
                     a salon journey defined by precision, creativity, and elevated haircare.
                   </p>
                   <div className="flex gap-3 mt-8">
+                    <Link href={"/haircuts-clayton"} title='haircuts-clayton page'>
                     <button
-                      className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap"
+                      className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap cursor-pointer"
                       style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
                     >
                       BE INSPIRED
                     </button>
+                    </Link>
+                   <Link href={"/booking"} title='booking page'>
                     <button
-                      className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap"
+                      className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap cursor-pointer"
                       style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
                     >
                       BOOK NOW
                     </button>
+                   </Link>
                   </div>
                 </div>
               </div>
