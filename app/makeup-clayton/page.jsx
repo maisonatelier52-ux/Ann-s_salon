@@ -126,7 +126,6 @@ const quickLinks = [
   { name: "Haircuts", href: "/haircuts-clayton" },
   { name: "Threading", href: "/threading-clayton" },
   { name: "Waxing", href: "/waxing-clayton" },
-  { name: "Beauty Tips Blog", href: "/beauty-tips-clayton" },
 ];
 
 /* ══════════════════════════════════════════

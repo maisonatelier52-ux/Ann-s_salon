@@ -25,10 +25,6 @@ const quickLinks = [{
 {
    name: "Makeup",
   href : "/makeup-clayton"
-},
-{
-   name: "Beauty Tips Blog",
-  href : "/beauty-tips-clayton"
 }]
 
 function FAQItem({ q, a }) {
