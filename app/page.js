@@ -95,7 +95,7 @@ function page() {
                     lineHeight: 0.95,
                   }}
                 >
-                  WELCOME TO TONI&amp;GUY
+                  WELCOME TO ANN'S Haircuts & beauty salon
                 </h1>
                 <p
                   className="text-white mt-5 text-sm leading-relaxed opacity-95 max-w-xs"
@@ -105,18 +105,22 @@ function page() {
                   a salon journey defined by precision, creativity, and elevated haircare.
                 </p>
                 <div className="flex gap-3 mt-8">
+                  <Link href={"/haircuts-clayton"} title='haircuts-clayton page'>
                   <button
-                    className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap"
+                    className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap cursor-pointer"
                     style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
                   >
                     BE INSPIRED
                   </button>
+                  </Link>
+                 <Link href={"/booking"} title='booking page'>
                   <button
-                    className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap"
+                    className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap cursor-pointer"
                     style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
                   >
                     BOOK NOW
                   </button>
+                  </Link>
                 </div>
               </div>
             </section>
@@ -168,12 +172,14 @@ function page() {
                     LABEL.M Personalised Haircare, created by TONI&amp;GUY. Explore our
                     collection of pro haircare.
                   </p>
+                 <Link href={"/threading-clayton"} title='threading page'>
                   <button
-                    className="mt-8 border-2 border-black text-black font-black text-xs px-8 py-3 uppercase tracking-widest hover:bg-black hover:text-white transition-colors whitespace-nowrap"
+                    className="mt-8 border-2 border-black text-black font-black text-xs px-8 py-3 uppercase tracking-widest hover:bg-black hover:text-white transition-colors whitespace-nowrap cursor-pointer"
                     style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
                   >
-                    SHOP ONLINE
+                    THREADING
                   </button>
+                  </Link>
                 </div>
               </div>
             </section>
@@ -221,12 +227,14 @@ function page() {
                   LABEL.M Personalised Haircare, created by TONI&amp;GUY. Explore our
                   collection of pro haircare.
                 </p>
+                 <Link href={"/threading-clayton"} title='threading page'>
                 <button
-                  className="mt-8 border-2 border-black text-black font-black text-xs px-8 py-3 uppercase tracking-widest hover:bg-black hover:text-white transition-colors whitespace-nowrap"
+                  className="mt-8 border-2 border-black text-black font-black text-xs px-8 py-3 uppercase tracking-widest hover:bg-black hover:text-white transition-colors whitespace-nowrap cursor-pointer"
                   style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
                 >
-                  SHOP ONLINE
+                 THREADING
                 </button>
+                 </Link>
               </div>
             </section>
 
@@ -277,18 +285,22 @@ function page() {
                     globally renowned hairdressing education.
                   </p>
                   <div className="flex gap-3 mt-8">
+                    <Link href={"/waxing-clayton"} title='waxing page'>
                     <button
-                      className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap"
+                      className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap cursor-pointer"
                       style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
                     >
-                      EXPLORE COURSES
+                      WAXING
                     </button>
+                    </Link>
+                     <Link href={"/booking"} title='booking page'>
                     <button
-                      className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap"
+                      className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap cursor-pointer"
                       style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
                     >
-                      OUR FLAGSHIP ACADEMY
+                      BOOKING
                     </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -336,18 +348,22 @@ function page() {
                   globally renowned hairdressing education.
                 </p>
                 <div className="flex flex-col gap-3 mt-8 w-full max-w-xs">
+                   <Link href={"/waxing-clayton"} title='waxing page'>
                   <button
-                    className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors w-full"
+                    className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors w-full cursor-pointer"
                     style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
                   >
-                    EXPLORE COURSES
+                   WAXING
                   </button>
+                   </Link>
+                    <Link href={"/booking"} title='booking page'>
                   <button
-                    className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors w-full"
+                    className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors w-full cursor-pointer"
                     style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
                   >
-                    OUR FLAGSHIP ACADEMY
+                    BOOKING
                   </button>
+                </Link>
                 </div>
               </div>
             </section>
@@ -403,12 +419,14 @@ function page() {
               Revitalise your hair with our new Hair Therapy experience, delivered
               by experts in a TONI&amp;GUY salon near you.
             </p>
+           <Link href={"/contact_us"} title='Contact us page'>
             <button
-              className="mt-8 border-2 border-white text-white font-black text-xs px-8 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap"
+              className="mt-8 border-2 border-white text-white font-black text-xs px-8 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap cursor-pointer"
               style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
             >
-              FIND A SALON
+              CONTACT US
             </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -450,12 +468,14 @@ function page() {
             Revitalise your hair with our new Hair Therapy experience, delivered
             by experts in a TONI&amp;GUY salon near you.
           </p>
+          <Link href={"/contact_us"} title='Contact us page'>
           <button
-            className="mt-8 border-2 border-white text-white font-black text-xs px-8 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap"
+            className="mt-8 border-2 border-white text-white font-black text-xs px-8 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap cursor-pointer"
             style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
           >
-            FIND A SALON
+            CONTACT US
           </button>
+          </Link>
         </div>
       </section>
       </div>

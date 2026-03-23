@@ -53,7 +53,7 @@ function Logo() {
         }}
       >
         {/* TONI&amp;GUY */}
-        ANN'S
+        ANN&apos;S
       </span>
 
       {/* OFFICIAL PARTNER — vertical, bottom to top */}

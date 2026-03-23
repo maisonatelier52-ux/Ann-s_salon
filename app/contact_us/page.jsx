@@ -5,10 +5,10 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const quickLinks = [
-  { name: "Haircuts", href: "/haircuts" },
-  { name: "Threading", href: "/threading" },
-  { name: "Waxing", href: "/waxing" },
-  { name: "Makeup", href: "/makeup" },
+  { name: "Haircuts", href: "/haircuts-clayton" },
+  { name: "Threading", href: "/threading-clayton" },
+  { name: "Waxing", href: "/waxing-clayton" },
+  { name: "Makeup", href: "/makeup-clayton" },
   { name: "Reviews", href: "/reviews" },
   { name: "Book a Slot", href: "/booking" },
 ];
