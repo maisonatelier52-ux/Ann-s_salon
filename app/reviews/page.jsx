@@ -255,7 +255,7 @@ export default function ReviewsPage() {
           <div className="flex items-center gap-4 mb-8">
             <div className="h-px w-10" style={{ backgroundColor: "#c9a96e" }} />
             <span className="uppercase text-xs tracking-[0.4em]" style={{ fontFamily: "Georgia, serif", color: "#c9a96e" }}>
-              Dahisar East, Mumbai
+              Clayton VIC 3168, Australia
             </span>
           </div>
 
@@ -321,7 +321,7 @@ export default function ReviewsPage() {
             letterSpacing: "0.25em",
           }}
         >
-          Appointment-only · Private Studio · One client at a time · Dahisar East, Mumbai
+          Appointment-only · Private Studio · One client at a time · Clayton, Australia
         </p>
       </section>
 
