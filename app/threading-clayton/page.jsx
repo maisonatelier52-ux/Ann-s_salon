@@ -363,7 +363,7 @@ export default function ThreadingPage() {
       {/* ══ LOCATION + QUICK LINKS ═══════════ */}
       <section className="w-full" style={{ backgroundColor: "#f5efe9" }}>
         <div className="max-w-7xl mx-auto px-8 lg:px-20 py-24 grid grid-cols-1 lg:grid-cols-2 gap-20">
-          <div>
+            <div>
             <div className="flex items-center gap-4 mb-10">
               <div className="h-px w-8" style={{ backgroundColor: "#8b6d50" }} />
               <span className="uppercase text-xs tracking-[0.35em]" style={{ fontFamily: "Georgia, serif", color: "#8b6d50" }}>Location</span>
@@ -375,10 +375,10 @@ export default function ThreadingPage() {
               FIND<br />US HERE.
             </h2>
             <p className="text-sm leading-relaxed mb-6" style={{ fontFamily: "Georgia, serif", color: "#6b5040" }}>
-              Barkat Villa, Shop No 2/3, Zen 11<br />Maratha Colony, Dahisar East<br />Mumbai, Maharashtra 400068<br />India
+              2025 Dandenong Rd<br />Clayton VIC 3168<br />Australia
             </p>
             <a
-              href="https://maps.app.goo.gl/iQ4hG5RH142W3svY9"
+              href="https://maps.app.goo.gl/gZFfDonDDsYouuPz8"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-xs uppercase tracking-widest border-b pb-1 hover:opacity-70 transition-opacity"
@@ -386,20 +386,19 @@ export default function ThreadingPage() {
             >
               Get Directions →
             </a>
-              <div className="mt-10 w-full overflow-hidden" style={{ height: "220px", border: "1px solid rgba(201,169,110,0.2)" }}>
+             <div className="mt-10 w-full overflow-hidden" style={{ height: "220px", border: "1px solid rgba(201,169,110,0.2)" }}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.2!2d72.8597!3d19.2183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b1e0b8e3b1b1%3A0x1!2sBarkat+Villa+Shop+No+2%2F3+Zen+11+Maratha+Colony+Dahisar+East+Mumbai+Maharashtra+400068!5e0!3m2!1sen!2sin!4v1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.034!2d145.1177!3d-37.9165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad66aba775b5a5b%3A0x5045675218ce860!2s2025+Dandenong+Rd%2C+Clayton+VIC+3168!5e0!3m2!1sen!2sau!4v1"
                 width="100%"
                 height="220"
-                style={{ border: 0, filter: "grayscale(20%) contrast(1.05)" }}
+                style={{ border: 0, filter: "grayscale(30%) contrast(1.1) brightness(0.85)" }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Studio location — Barkat Villa, Dahisar East, Mumbai"
+                title="Studio location — 2025 Dandenong Rd, Clayton VIC"
               />
             </div>
           </div>
-
           <div>
             <div className="flex items-center gap-4 mb-10">
               <div className="h-px w-8" style={{ backgroundColor: "#8b6d50" }} />
