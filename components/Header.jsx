@@ -220,3 +220,46 @@ export default function Header() {
     </>
   );
 }
+
+// "use client";
+
+// import Link from "next/link";
+
+// export default function Header() {
+//   return (
+//     <header className="w-full bg-[#ede8e2] border-b border-gray-300">
+//       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
+
+//         {/* Logo */}
+//         <div className="text-2xl font-bold tracking-tight text-black">
+//           ANN’S
+//         </div>
+
+//         {/* Nav */}
+//         <nav className="hidden lg:flex items-center gap-8 text-sm text-black">
+//           <Link href="/" className="hover:opacity-70">Home</Link>
+//           <Link href="/services" className="hover:opacity-70">Services</Link>
+//           <Link href="/gallery" className="hover:opacity-70">Gallery</Link>
+//           <Link href="/about" className="hover:opacity-70">About</Link>
+//           <Link href="/contact_us" className="hover:opacity-70">Contact</Link>
+//         </nav>
+
+//         {/* Right Buttons */}
+//         <div className="flex items-center gap-3">
+//           <Link href="/booking">
+//             <button className="bg-[#9a7a5a] text-white text-xs px-4 py-2 uppercase tracking-wider">
+//               Book Now
+//             </button>
+//           </Link>
+
+//           <Link href="/contact_us">
+//             <button className="border border-black text-xs px-4 py-2 uppercase tracking-wider text-black">
+//               Call
+//             </button>
+//           </Link>
+//         </div>
+
+//       </div>
+//     </header>
+//   );
+// }
