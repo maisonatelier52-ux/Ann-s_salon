@@ -12,712 +12,575 @@ function page() {
     <div>
       <Header />
       <div>
-        
-            {/* ── HERO DESKTOP (lg+) ── */}
-            <section
-              className="hidden lg:block relative w-full overflow-hidden lg:min-h-[600px]"
-              style={{ backgroundColor: "#9a9a8e" }}
-            >
-              <div className="absolute left-0 top-0 h-full w-1/2 ">
-                <Image
-                  src="/images/hero-image5.png"
-                  alt="TONI&GUY model"
-                  fill
-                  className="object-cover object-center"
-                  priority
-                />
-              </div>
-              <div className="relative z-10 flex items-center justify-end min-h-[600px]">
-                <div className="w-1/2 flex flex-col items-start justify-center px-10 py-20 text-left">
-                  <h1
-                    className="text-white font-black uppercase leading-none tracking-tight"
-                    style={{
-                      fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif",
-                      fontSize: "clamp(2.8rem, 7vw, 4rem)",
-                      letterSpacing: "-0.02em",
-                      lineHeight: 0.95,
-                    }}
-                  >
-                    WELCOME TO
-                    <br />
-                    {/* TONI&amp;GUY */}
-                    ANN'S Haircuts & beauty salon
-                  </h1>
-                  <p
-                    className="text-white mt-5 max-w-sm text-sm leading-relaxed opacity-95"
-                    style={{ fontFamily: "Arial, sans-serif" }}
-                  >
-                    Indulge in the mastery of our globally acclaimed artists and experience
-                    a salon journey defined by precision, creativity, and elevated haircare.
-                  </p>
-                  <div className="flex gap-3 mt-8">
-                    <Link href={"/haircuts-clayton"} title='haircuts-clayton page'>
-                    <button
-                      className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap cursor-pointer"
-                      style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
-                    >
-                      BE INSPIRED
-                    </button>
-                    </Link>
-                   <Link href={"/booking"} title='booking page'>
-                    <button
-                      className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap cursor-pointer"
-                      style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
-                    >
-                      BOOK NOW
-                    </button>
-                   </Link>
-                  </div>
-                </div>
-              </div>
-            </section>
 
-            {/* ── HERO MOBILE / TABLET (< lg) ── */}
-            <section
-              className="flex lg:hidden flex-col w-full"
-              style={{ backgroundColor: "#9a9a8e" }}
-            >
-              <div className="relative w-full" style={{ height: "155vw", minHeight: "260px", maxHeight: "470px" }}>
-                <Image
-                  src="/images/hero-image5.png"
-                  alt="TONI&GUY model"
-                  fill
-                  className="object-cover object-top"
-                  priority
-                />
-              </div>
-              <div className="flex flex-col items-center text-center px-8 py-12">
-                <h1
-                  className="text-white font-black uppercase leading-none tracking-tight"
-                  style={{
-                    fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif",
-                    fontSize: "clamp(2rem, 8vw, 3rem)",
-                    letterSpacing: "-0.02em",
-                    lineHeight: 0.95,
-                  }}
-                >
-                  WELCOME TO ANN'S Haircuts & beauty salon
-                </h1>
-                <p
-                  className="text-white mt-5 text-sm leading-relaxed opacity-95 max-w-xs"
-                  style={{ fontFamily: "Arial, sans-serif" }}
-                >
-                  Indulge in the mastery of our globally acclaimed artists and experience
-                  a salon journey defined by precision, creativity, and elevated haircare.
-                </p>
-                <div className="flex gap-3 mt-8">
-                  <Link href={"/haircuts-clayton"} title='haircuts-clayton page'>
+        {/* ── HERO DESKTOP (lg+) ── */}
+        <section
+          className="hidden lg:block relative w-full overflow-hidden lg:min-h-[600px]"
+          style={{ backgroundColor: "#9a9a8e" }}
+        >
+          <div className="absolute left-0 top-0 h-full w-1/2">
+            <Image
+              src="/images/hero-image5.png"
+              alt="Ann's Haircuts & Beauty Salon"
+              fill
+              className="object-cover object-center"
+              priority
+            />
+          </div>
+          <div className="relative z-10 flex items-center justify-end min-h-[600px]">
+            <div className="w-1/2 flex flex-col items-start justify-center px-10 py-20 text-left">
+              <h1
+                className="text-white font-black uppercase leading-none tracking-tight"
+                style={{
+                  fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif",
+                  fontSize: "clamp(2.8rem, 7vw, 4rem)",
+                  letterSpacing: "-0.02em",
+                  lineHeight: 0.95,
+                }}
+              >
+                WELCOME TO
+                <br />
+                ANN&apos;S HAIRCUTS
+                <br />
+                &amp; BEAUTY SALON
+              </h1>
+              <p
+                className="text-white mt-5 max-w-sm text-sm leading-relaxed opacity-95"
+                style={{ fontFamily: "Arial, sans-serif" }}
+              >
+                A private studio experience in the heart of Clayton. Expert stylists,
+                personalised care, and results that speak for themselves — one client at a time.
+              </p>
+              <div className="flex gap-3 mt-8">
+                <Link href="/haircuts-clayton" title="View our haircut services">
                   <button
                     className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap cursor-pointer"
                     style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
                   >
-                    BE INSPIRED
+                    OUR SERVICES
                   </button>
-                  </Link>
-                 <Link href={"/booking"} title='booking page'>
+                </Link>
+                <Link href="/booking" title="Book a slot">
                   <button
                     className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap cursor-pointer"
                     style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
                   >
                     BOOK NOW
                   </button>
-                  </Link>
-                </div>
+                </Link>
               </div>
-            </section>
+            </div>
+          </div>
+        </section>
+
+        {/* ── HERO MOBILE / TABLET (< lg) ── */}
+        <section
+          className="flex lg:hidden flex-col w-full"
+          style={{ backgroundColor: "#9a9a8e" }}
+        >
+          <div className="relative w-full" style={{ height: "155vw", minHeight: "260px", maxHeight: "470px" }}>
+            <Image
+              src="/images/hero-image5.png"
+              alt="Ann's Haircuts & Beauty Salon"
+              fill
+              className="object-cover object-top"
+              priority
+            />
+          </div>
+          <div className="flex flex-col items-center text-center px-8 py-12">
+            <h1
+              className="text-white font-black uppercase leading-none tracking-tight"
+              style={{
+                fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif",
+                fontSize: "clamp(2rem, 8vw, 3rem)",
+                letterSpacing: "-0.02em",
+                lineHeight: 0.95,
+              }}
+            >
+              WELCOME TO ANN&apos;S
+              <br />
+              HAIRCUTS &amp; BEAUTY SALON
+            </h1>
+            <p
+              className="text-white mt-5 text-sm leading-relaxed opacity-95 max-w-xs"
+              style={{ fontFamily: "Arial, sans-serif" }}
+            >
+              A private studio experience in the heart of Clayton. Expert stylists,
+              personalised care, and results that speak for themselves — one client at a time.
+            </p>
+            <div className="flex gap-3 mt-8">
+              <Link href="/haircuts-clayton" title="View our haircut services">
+                <button
+                  className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap cursor-pointer"
+                  style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
+                >
+                  OUR SERVICES
+                </button>
+              </Link>
+              <Link href="/booking" title="Book a slot">
+                <button
+                  className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap cursor-pointer"
+                  style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
+                >
+                  BOOK NOW
+                </button>
+              </Link>
+            </div>
+          </div>
+        </section>
       </div>
+
       <div>
-        
-            {/* ══════════════════════════════════════════
-                HAIRCARE SECTION — DESKTOP (lg+)
-                Text left | Image absolute right
-            ══════════════════════════════════════════ */}
-            <section
-              className="hidden lg:block relative w-full overflow-hidden lg:min-h-[560px]"
-              style={{ backgroundColor: "#D6D6D6" }}
-            >
-              {/* Image — absolute right half */}
-              <div className="absolute right-0 top-0 h-full w-1/2">
-                <Image
-                  src="/images/hero-image7.jpg"
-                  alt="Professional haircare model"
-                  fill
-                  className="object-cover object-center"
-                />
-              </div>
-
-              {/* Text — left half */}
-              <div className="relative z-10 flex items-center justify-start min-h-[560px]">
-                <div className="w-1/2 flex flex-col items-start justify-center px-16 py-20 text-left">
-                  <h2
-                    className="text-black font-black uppercase leading-none"
-                    style={{
-                      fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif",
-                      fontSize: "clamp(2rem, 4.5vw, 3.5rem)",
-                      letterSpacing: "-0.02em",
-                      lineHeight: 1.0,
-                    }}
-                  >
-                    PROFESSIONAL
-                    <br />
-                    HAIRCARE,
-                    <br />
-                    CURATED FOR
-                    <br />
-                    YOU.
-                  </h2>
-                  <p
-                    className="text-black mt-6 text-sm leading-relaxed max-w-xs opacity-80"
-                    style={{ fontFamily: "Arial, sans-serif" }}
-                  >
-                    LABEL.M Personalised Haircare, created by TONI&amp;GUY. Explore our
-                    collection of pro haircare.
-                  </p>
-                 <Link href={"/threading-clayton"} title='threading page'>
-                  <button
-                    className="mt-8 border-2 border-black text-black font-black text-xs px-8 py-3 uppercase tracking-widest hover:bg-black hover:text-white transition-colors whitespace-nowrap cursor-pointer"
-                    style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
-                  >
-                    THREADING
-                  </button>
-                  </Link>
-                </div>
-              </div>
-            </section>
-
-            {/* ══════════════════════════════════════════
-                HAIRCARE SECTION — MOBILE / TABLET (< lg)
-                Image top | Text bottom
-            ══════════════════════════════════════════ */}
-            <section
-              className="flex lg:hidden flex-col w-full"
-              style={{ backgroundColor: "#e8e5e0" }}
-            >
-              {/* Image — top */}
-              <div
-                className="relative w-full"
-                style={{ height: "100vw", minHeight: "280px", maxHeight: "480px" }}
+        {/* ── THREADING SECTION — DESKTOP (lg+) ── */}
+        <section
+          className="hidden lg:block relative w-full overflow-hidden lg:min-h-[560px]"
+          style={{ backgroundColor: "#D6D6D6" }}
+        >
+          <div className="absolute right-0 top-0 h-full w-1/2">
+            <Image
+              src="/images/hero-image7.jpg"
+              alt="Professional threading service at Ann's"
+              fill
+              className="object-cover object-center"
+            />
+          </div>
+          <div className="relative z-10 flex items-center justify-start min-h-[560px]">
+            <div className="w-1/2 flex flex-col items-start justify-center px-16 py-20 text-left">
+              <h2
+                className="text-black font-black uppercase leading-none"
+                style={{
+                  fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif",
+                  fontSize: "clamp(2rem, 4.5vw, 3.5rem)",
+                  letterSpacing: "-0.02em",
+                  lineHeight: 1.0,
+                }}
               >
-                <Image
-                  src="/images/hero-image7.jpg"
-                  alt="Professional haircare model"
-                  fill
-                  className="object-cover object-top"
-                />
-              </div>
-
-              {/* Text — bottom */}
-              <div className="flex flex-col items-center text-center px-8 py-12">
-                <h2
-                  className="text-black font-black uppercase leading-none"
-                  style={{
-                    fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif",
-                    fontSize: "clamp(1.8rem, 8vw, 2.8rem)",
-                    letterSpacing: "-0.02em",
-                    lineHeight: 1.0,
-                  }}
-                >
-                  PROFESSIONAL HAIRCARE,
-                  <br />
-                  CURATED FOR YOU.
-                </h2>
-                <p
-                  className="text-black mt-5 text-sm leading-relaxed opacity-80 max-w-xs"
-                  style={{ fontFamily: "Arial, sans-serif" }}
-                >
-                  LABEL.M Personalised Haircare, created by TONI&amp;GUY. Explore our
-                  collection of pro haircare.
-                </p>
-                 <Link href={"/threading-clayton"} title='threading page'>
+                PERFECTLY
+                <br />
+                SHAPED BROWS,
+                <br />
+                EVERY SINGLE
+                <br />
+                TIME.
+              </h2>
+              <p
+                className="text-black mt-6 text-sm leading-relaxed max-w-xs opacity-80"
+                style={{ fontFamily: "Arial, sans-serif" }}
+              >
+                Our expert threading technicians deliver precise brow shaping and
+                facial hair removal — clean, defined, and tailored to your face shape.
+              </p>
+              <Link href="/threading-clayton" title="Threading services">
                 <button
                   className="mt-8 border-2 border-black text-black font-black text-xs px-8 py-3 uppercase tracking-widest hover:bg-black hover:text-white transition-colors whitespace-nowrap cursor-pointer"
                   style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
                 >
-                 THREADING
+                  EXPLORE THREADING
                 </button>
-                 </Link>
-              </div>
-            </section>
+              </Link>
+            </div>
+          </div>
+        </section>
 
+        {/* ── THREADING SECTION — MOBILE / TABLET ── */}
+        <section
+          className="flex lg:hidden flex-col w-full"
+          style={{ backgroundColor: "#e8e5e0" }}
+        >
+          <div
+            className="relative w-full"
+            style={{ height: "100vw", minHeight: "280px", maxHeight: "480px" }}
+          >
+            <Image
+              src="/images/hero-image7.jpg"
+              alt="Professional threading service at Ann's"
+              fill
+              className="object-cover object-top"
+            />
+          </div>
+          <div className="flex flex-col items-center text-center px-8 py-12">
+            <h2
+              className="text-black font-black uppercase leading-none"
+              style={{
+                fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif",
+                fontSize: "clamp(1.8rem, 8vw, 2.8rem)",
+                letterSpacing: "-0.02em",
+                lineHeight: 1.0,
+              }}
+            >
+              PERFECTLY SHAPED
+              <br />
+              BROWS, EVERY TIME.
+            </h2>
+            <p
+              className="text-black mt-5 text-sm leading-relaxed opacity-80 max-w-xs"
+              style={{ fontFamily: "Arial, sans-serif" }}
+            >
+              Precise brow shaping and facial hair removal — clean, defined, and
+              tailored to your face shape.
+            </p>
+            <Link href="/threading-clayton" title="Threading services">
+              <button
+                className="mt-8 border-2 border-black text-black font-black text-xs px-8 py-3 uppercase tracking-widest hover:bg-black hover:text-white transition-colors whitespace-nowrap cursor-pointer"
+                style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
+              >
+                EXPLORE THREADING
+              </button>
+            </Link>
+          </div>
+        </section>
       </div>
+
       <div>
-        {/* ══════════════════════════════════════════
-                EDUCATION — DESKTOP (lg+)
-                Image left | Text right
-            ══════════════════════════════════════════ */}
-            <section
-              className="hidden lg:block relative w-full overflow-hidden lg:min-h-[700px]"
-              style={{ backgroundColor: "#83847D" }}
-            >
-              {/* Image — absolute left half */}
-              <div className="absolute left-0 top-0 h-full w-1/2">
-                <Image
-                  src="/images/hero-image8.jpg"
-                  alt="TONI&GUY education model"
-                  fill
-                  className="object-cover object-center"
-                />
-              </div>
-      
-              {/* Text — right half */}
-              <div className="relative z-10 flex items-center justify-end min-h-[560px]">
-                <div className="w-1/2 flex flex-col items-start justify-center px-14 py-20 text-left">
-                  <h2
-                    className="text-white font-black uppercase leading-none"
-                    style={{
-                      fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif",
-                      fontSize: "clamp(2rem, 4.5vw, 3.5rem)",
-                      letterSpacing: "-0.02em",
-                      lineHeight: 1.05,
-                    }}
-                  >
-                    EDUCATION.
-                    <br />
-                    EDUCATION.
-                    <br />
-                    EDUCATION.
-                  </h2>
-                  <p
-                    className="text-white mt-6 text-sm leading-relaxed max-w-sm opacity-90 text-center"
-                    style={{ fontFamily: "Arial, sans-serif" }}
-                  >
-                    For over 60 years, our success and philosophy has been rooted firmly
-                    in education. Sharing our unique experience, to create innovative,
-                    globally renowned hairdressing education.
-                  </p>
-                  <div className="flex gap-3 mt-8">
-                    <Link href={"/waxing-clayton"} title='waxing page'>
-                    <button
-                      className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap cursor-pointer"
-                      style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
-                    >
-                      WAXING
-                    </button>
-                    </Link>
-                     <Link href={"/booking"} title='booking page'>
-                    <button
-                      className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap cursor-pointer"
-                      style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
-                    >
-                      BOOKING
-                    </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </section>
-      
-            {/* ── EDUCATION MOBILE / TABLET (< lg) ── */}
-            <section
-              className="flex lg:hidden flex-col w-full"
-              style={{ backgroundColor: "#9a9a8e" }}
-            >
-              {/* Image — top */}
-              <div className="relative w-full" style={{ height: "100vw", minHeight: "280px", maxHeight: "480px" }}>
-                <Image
-                  src="/images/hero-image8.jpg"
-                  alt="TONI&GUY education model"
-                  fill
-                  className="object-cover object-top"
-                  loading="eager"
-                />
-              </div>
-      
-              {/* Text — bottom */}
-              <div className="flex flex-col items-center text-center px-8 py-12">
-                <h2
-                  className="text-white font-black uppercase leading-none"
-                  style={{
-                    fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif",
-                    fontSize: "clamp(1.8rem, 8vw, 2.8rem)",
-                    letterSpacing: "-0.02em",
-                    lineHeight: 1.05,
-                  }}
-                >
-                  EDUCATION.
-                  <br />
-                  EDUCATION.
-                  <br />
-                  EDUCATION.
-                </h2>
-                <p
-                  className="text-white mt-5 text-sm leading-relaxed opacity-90 max-w-xs"
-                  style={{ fontFamily: "Arial, sans-serif" }}
-                >
-                  For over 60 years, our success and philosophy has been rooted firmly
-                  in education. Sharing our unique experience, to create innovative,
-                  globally renowned hairdressing education.
-                </p>
-                <div className="flex flex-col gap-3 mt-8 w-full max-w-xs">
-                   <Link href={"/waxing-clayton"} title='waxing page'>
+        {/* ── WAXING SECTION — DESKTOP (lg+) ── */}
+        <section
+          className="hidden lg:block relative w-full overflow-hidden lg:min-h-[700px]"
+          style={{ backgroundColor: "#83847D" }}
+        >
+          <div className="absolute left-0 top-0 h-full w-1/2">
+            <Image
+              src="/images/hero-image8.jpg"
+              alt="Premium waxing services at Ann's"
+              fill
+              className="object-cover object-center"
+            />
+          </div>
+          <div className="relative z-10 flex items-center justify-end min-h-[560px]">
+            <div className="w-1/2 flex flex-col items-start justify-center px-14 py-20 text-left">
+              <h2
+                className="text-white font-black uppercase leading-none"
+                style={{
+                  fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif",
+                  fontSize: "clamp(2rem, 4.5vw, 3.5rem)",
+                  letterSpacing: "-0.02em",
+                  lineHeight: 1.05,
+                }}
+              >
+                SILKY SMOOTH.
+                <br />
+                LASTING RESULTS.
+                <br />
+                PURE CONFIDENCE.
+              </h2>
+              <p
+                className="text-white mt-6 text-sm leading-relaxed max-w-sm opacity-90"
+                style={{ fontFamily: "Arial, sans-serif" }}
+              >
+                From facial waxing to full body treatments, our premium waxing services
+                leave your skin flawlessly smooth. Gentle on skin, tough on unwanted hair —
+                results that last up to six weeks.
+              </p>
+              <div className="flex gap-3 mt-8">
+                <Link href="/waxing-clayton" title="Waxing services">
                   <button
-                    className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors w-full cursor-pointer"
+                    className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap cursor-pointer"
                     style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
                   >
-                   WAXING
-                  </button>
-                   </Link>
-                    <Link href={"/booking"} title='booking page'>
-                  <button
-                    className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors w-full cursor-pointer"
-                    style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
-                  >
-                    BOOKING
+                    EXPLORE WAXING
                   </button>
                 </Link>
-                </div>
+                <Link href="/booking" title="Book a slot">
+                  <button
+                    className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap cursor-pointer"
+                    style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
+                  >
+                    BOOK A SLOT
+                  </button>
+                </Link>
               </div>
-            </section>
-      </div>
+            </div>
+          </div>
+        </section>
 
-      <div>
-  {/* ══════════════════════════════════════════
-      OUR SERVICES SECTION — DESKTOP & MOBILE
-      Background image, centered heading, 4 cards row, gold button
-  ══════════════════════════════════════════ */}
-  <section className="relative w-full overflow-hidden py-16 md:py-24 bg-cover bg-center bg-no-repeat">
-    {/* Background Image */}
-    <div className="absolute inset-0 z-0">
-      <Image
-        src="/images/ChatGPT Image Mar 31, 2026, 02_33_46 PM.png"
-        alt="Luxury salon background"
-        fill
-        className="object-cover object-center"
-        priority
-      />
-      {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/20" />
-    </div>
-
-    {/* Content Container */}
-    <div className="relative z-10 container mx-auto px-4 md:px-8 lg:px-16">
-      {/* Heading & Subheading — centered */}
-      <div className="text-center mb-12 md:mb-16">
-        <h2
-          className="text-black font-black uppercase tracking-tight mb-3"
-          style={{
-            fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif",
-            fontSize: "clamp(2rem, 5vw, 3.5rem)",
-            letterSpacing: "-0.02em",
-            lineHeight: 1.1,
-          }}
+        {/* ── WAXING SECTION — MOBILE / TABLET ── */}
+        <section
+          className="flex lg:hidden flex-col w-full"
+          style={{ backgroundColor: "#9a9a8e" }}
         >
-          OUR SERVICES
-        </h2>
-        <p
-          className="text-black/70 text-sm md:text-base tracking-wide uppercase font-semibold"
-          style={{ fontFamily: "Arial, sans-serif", letterSpacing: "0.1em" }}
-        >
-          INDULGE IN LUXURY. EXPERIENCE PERFECTION.
-        </p>
-      </div>
-
-      {/* 4 Cards Grid — row on desktop, column on mobile */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-7xl mx-auto">
-        
-        {/* Card 1 — HAIRCUTS */}
-     <Link href={"/haircuts-clayton"} title='haircut page'>
-      <div className="group bg-white/85 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-  
-        {/* Top Image */}
-        <div className="relative w-full h-48 md:h-56 overflow-hidden">
-          <Image
-            src="/images/haircuts/men-fade.webp"
-            alt="Haircut service"
-            fill
-            className="object-cover group-hover:scale-105 transition-transform duration-500"
-          />
-        </div>
-
-        {/* Content */}
-        <div className="p-5 text-center">
-
-          {/* ICON + TITLE ROW */}
-          <div className="flex items-center justify-center gap-3 mb-3">
+          <div className="relative w-full" style={{ height: "100vw", minHeight: "280px", maxHeight: "480px" }}>
             <Image
-              src="/images/haircut-icon-image.webp" 
-              alt="Haircut icon"
-              width={32}
-              height={32}
-              className="object-contain"
-            />
-
-            <h3
-              className="text-black font-black text-xl uppercase"
-              style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
-            >
-              HAIRCUTS
-            </h3>
-          </div>
-
-          {/* Description */}
-          <p className="text-gray-600 text-sm leading-relaxed">
-            Tailored precision cuts designed to complement your individuality and elevate your style.
-          </p>
-
-        </div>
-      </div>
-    </Link>
-        {/* Card 2 — THREADING */}
-         <Link href={"/threading-clayton"} title='threading page'>
-       <div className="group bg-white/85 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-  
-        <div className="relative w-full h-48 md:h-56 overflow-hidden">
-          <Image
-            src="/images/threading/bold.webp"
-            alt="Threading service"
-            fill
-            className="object-cover group-hover:scale-105 transition-transform duration-500"
-          />
-        </div>
-
-        <div className="p-5 text-center">
-
-          {/* ICON + TITLE ROW */}
-          <div className="flex items-center justify-center gap-3 mb-3">
-            <Image
-              src="/images/threading-icon-image.webp" 
-              alt="Haircut icon"
-              width={32}
-              height={32}
-              className="object-contain"
-            />
-
-            <h3
-              className="text-black font-black text-xl uppercase"
-              style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
-            >
-              THREADING
-            </h3>
-          </div>
-
-          <p className="text-gray-600 text-sm leading-relaxed">
-            Meticulous brow shaping and facial threading for a clean, defined, and polished look.
-          </p>
-
-        </div>
-      </div>
-      </Link>
-
-        {/* Card 3 — WAXING */}
-         <Link href={"/waxing-clayton"} title='waxing page'>
-       <div className="group bg-white/85 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-  
-        <div className="relative w-full h-48 md:h-56 overflow-hidden">
-          <Image
-            src="/images/waxing/facial-image.webp"
-            alt="Waxing service"
-            fill
-            className="object-cover group-hover:scale-105 transition-transform duration-500"
-          />
-        </div>
-
-        <div className="p-5 text-center">
-            <div className="flex items-center justify-center gap-3 mb-3">
-            <Image
-              src="/images/waxing-icon-image.webp" 
-              alt="Haircut icon"
-              width={32}
-              height={32}
-              className="object-contain"
-            />
-
-            <h3
-              className="text-black font-black text-xl uppercase"
-              style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
-            >
-              WAXING
-            </h3>
-          </div>
-
-          <p className="text-gray-600 text-sm leading-relaxed">
-            Premium waxing treatments that leave your skin flawlessly smooth and radiant.
-          </p>
-
-        </div>
-      </div>
-      </Link>
-
-        {/* Card 4 — MAKEUP */}
-         <Link href={"/makeup-clayton"} title='makeup page'>
-        <div className="group bg-white/85 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-          
-          <div className="relative w-full h-48 md:h-56 overflow-hidden">
-            <Image
-              src="/images/makeup/glam-evening.webp"
-              alt="Makeup service"
+              src="/images/hero-image8.jpg"
+              alt="Premium waxing services at Ann's"
               fill
-              className="object-cover group-hover:scale-105 transition-transform duration-500"
+              className="object-cover object-top"
+              loading="eager"
             />
           </div>
-
-          <div className="p-5 text-center">
-             <div className="flex items-center justify-center gap-3 mb-3">
-            <Image
-              src="/images/makeup-icon-image.webp" 
-              alt="Haircut icon"
-              width={32}
-              height={32}
-              className="object-contain"
-            />
-
-            <h3
-              className="text-black font-black text-xl uppercase"
-              style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
-            >
-               MAKEUP
-            </h3>
-          </div>
-           
-
-            <p className="text-gray-600 text-sm leading-relaxed">
-              Professional makeup artistry that enhances your natural beauty with a flawless finish.
-            </p>
-
-          </div>
-        </div>
-        </Link>
-      </div>
-
-      {/* Gold Button — centered below cards */}
-      <div className="text-center mt-12 md:mt-16">
-       <Link href="/about" title="Explore all services from about page">
-          <button
-            className="px-8 py-3 md:px-10 md:py-4 uppercase font-black text-sm md:text-base tracking-wider cursor-pointer
-                      transition-all duration-300 
-                      bg-[#C9A03D] text-black 
-                      hover:bg-[#b38f33] hover:-translate-y-[2px] hover:scale-105"
-            style={{
-              fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif",
-              borderRadius: "0",
-            }}
-          >
-            EXPLORE ALL SERVICES
-          </button>
-        </Link>
-      </div>
-    </div>
-  </section>
-</div>
-      <div>
-        <HomeSections/>
-        
-      {/* ══════════════════════════════════════════
-          NEW VISION — DESKTOP (lg+)
-          Full-width bg image, text overlaid bottom-left
-      ══════════════════════════════════════════ */}
-      <section className="hidden lg:block relative w-full overflow-hidden lg:min-h-[560px]">
-        {/* Full-width background image */}
-        <div className="absolute inset-0">
-          <Image
-            src="/images/c414414c44e5a76a11e841db88e91a23.jpg"
-            alt="TONI&GUY salon interior"
-            fill
-            className="object-cover object-center"
-          />
-        </div>
-         <div
-          className="absolute inset-0"
-          style={{
-            background: "linear-gradient(to bottom, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0.35) 100%)",
-          }}
-        />
- 
-        {/* Dark overlay for text readability */}
-        <div className="absolute inset-0" style={{ backgroundColor: "rgba(0,0,0,0.25)" }} />
- 
-        {/* Text — overlaid bottom-left */}
-        <div className="relative z-10 flex items-center justify-start min-h-[560px]">
-          <div className="flex flex-col items-start justify-center px-16 py-20 text-left max-w-xl">
+          <div className="flex flex-col items-center text-center px-8 py-12">
             <h2
               className="text-white font-black uppercase leading-none"
               style={{
                 fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif",
-                fontSize: "clamp(2rem, 4.5vw, 3.5rem)",
+                fontSize: "clamp(1.8rem, 8vw, 2.8rem)",
                 letterSpacing: "-0.02em",
                 lineHeight: 1.05,
               }}
             >
-              NEW VISION.
+              SILKY SMOOTH.
               <br />
-              NEW ENERGY.
-              <br />
-              NEW EDITION.
+              LASTING RESULTS.
             </h2>
             <p
-              className="text-white mt-6 text-sm leading-relaxed opacity-90 max-w-sm"
+              className="text-white mt-5 text-sm leading-relaxed opacity-90 max-w-xs"
               style={{ fontFamily: "Arial, sans-serif" }}
             >
-              Revitalise your hair with our new Hair Therapy experience, delivered
-              by experts in a TONI&amp;GUY salon near you.
+              Premium waxing services that leave your skin flawlessly smooth with
+              results that last up to six weeks.
             </p>
-           <Link href={"/contact_us"} title='Contact us page'>
-            <button
-              className="mt-8 border-2 border-white text-white font-black text-xs px-8 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap cursor-pointer"
-              style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
+            <div className="flex flex-col gap-3 mt-8 w-full max-w-xs">
+              <Link href="/waxing-clayton" title="Waxing services">
+                <button
+                  className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors w-full cursor-pointer"
+                  style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
+                >
+                  EXPLORE WAXING
+                </button>
+              </Link>
+              <Link href="/booking" title="Book a slot">
+                <button
+                  className="border-2 border-white text-white font-black text-xs px-6 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors w-full cursor-pointer"
+                  style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
+                >
+                  BOOK A SLOT
+                </button>
+              </Link>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div>
+        {/* ── OUR SERVICES SECTION ── */}
+        <section className="relative w-full overflow-hidden py-16 md:py-24 bg-cover bg-center bg-no-repeat">
+          <div className="absolute inset-0 z-0">
+            <Image
+              src="/images/ChatGPT Image Mar 31, 2026, 02_33_46 PM.png"
+              alt="Ann's Beauty Salon background"
+              fill
+              className="object-cover object-center"
+              priority
+            />
+            <div className="absolute inset-0 bg-black/20" />
+          </div>
+
+          <div className="relative z-10 container mx-auto px-4 md:px-8 lg:px-16">
+            <div className="text-center mb-12 md:mb-16">
+              <h2
+                className="text-black font-black uppercase tracking-tight mb-3"
+                style={{
+                  fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif",
+                  fontSize: "clamp(2rem, 5vw, 3.5rem)",
+                  letterSpacing: "-0.02em",
+                  lineHeight: 1.1,
+                }}
+              >
+                OUR SERVICES
+              </h2>
+              <p
+                className="text-black/70 text-sm md:text-base tracking-wide uppercase font-semibold"
+                style={{ fontFamily: "Arial, sans-serif", letterSpacing: "0.1em" }}
+              >
+                INDULGE IN LUXURY. EXPERIENCE PERFECTION.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-7xl mx-auto">
+
+              {/* Card 1 — HAIRCUTS */}
+              <Link href="/haircuts-clayton" title="Haircut services at Ann's">
+                <div className="group bg-white/85 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                  <div className="relative w-full h-48 md:h-56 overflow-hidden">
+                    <Image src="/images/haircuts/men-fade.webp" alt="Haircut service" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                  </div>
+                  <div className="p-5 text-center">
+                    <div className="flex items-center justify-center gap-3 mb-3">
+                      <Image src="/images/haircut-icon-image.webp" alt="Haircut icon" width={32} height={32} className="object-contain" />
+                      <h3 className="text-black font-black text-xl uppercase" style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}>HAIRCUTS</h3>
+                    </div>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Tailored precision cuts designed to complement your individuality and elevate your personal style.
+                    </p>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Card 2 — THREADING */}
+              <Link href="/threading-clayton" title="Threading services at Ann's">
+                <div className="group bg-white/85 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                  <div className="relative w-full h-48 md:h-56 overflow-hidden">
+                    <Image src="/images/threading/bold.webp" alt="Threading service" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                  </div>
+                  <div className="p-5 text-center">
+                    <div className="flex items-center justify-center gap-3 mb-3">
+                      <Image src="/images/threading-icon-image.webp" alt="Threading icon" width={32} height={32} className="object-contain" />
+                      <h3 className="text-black font-black text-xl uppercase" style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}>THREADING</h3>
+                    </div>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Meticulous brow shaping and facial threading for a clean, defined, and polished look.
+                    </p>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Card 3 — WAXING */}
+              <Link href="/waxing-clayton" title="Waxing services at Ann's">
+                <div className="group bg-white/85 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                  <div className="relative w-full h-48 md:h-56 overflow-hidden">
+                    <Image src="/images/waxing/facial-image.webp" alt="Waxing service" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                  </div>
+                  <div className="p-5 text-center">
+                    <div className="flex items-center justify-center gap-3 mb-3">
+                      <Image src="/images/waxing-icon-image.webp" alt="Waxing icon" width={32} height={32} className="object-contain" />
+                      <h3 className="text-black font-black text-xl uppercase" style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}>WAXING</h3>
+                    </div>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Premium waxing treatments that leave your skin flawlessly smooth and radiant.
+                    </p>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Card 4 — MAKEUP */}
+              <Link href="/makeup-clayton" title="Makeup services at Ann's">
+                <div className="group bg-white/85 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                  <div className="relative w-full h-48 md:h-56 overflow-hidden">
+                    <Image src="/images/makeup/glam-evening.webp" alt="Makeup service" fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                  </div>
+                  <div className="p-5 text-center">
+                    <div className="flex items-center justify-center gap-3 mb-3">
+                      <Image src="/images/makeup-icon-image.webp" alt="Makeup icon" width={32} height={32} className="object-contain" />
+                      <h3 className="text-black font-black text-xl uppercase" style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}>MAKEUP</h3>
+                    </div>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Professional makeup artistry that enhances your natural beauty with a flawless, lasting finish.
+                    </p>
+                  </div>
+                </div>
+              </Link>
+
+            </div>
+
+            <div className="text-center mt-12 md:mt-16">
+              <Link href="/about" title="Explore all services at Ann's">
+                <button
+                  className="px-8 py-3 md:px-10 md:py-4 uppercase font-black text-sm md:text-base tracking-wider cursor-pointer transition-all duration-300 bg-[#C9A03D] text-black hover:bg-[#b38f33] hover:-translate-y-[2px] hover:scale-105"
+                  style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif", borderRadius: "0" }}
+                >
+                  EXPLORE ALL SERVICES
+                </button>
+              </Link>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div>
+        <HomeSections />
+
+        {/* ── CONTACT BANNER — DESKTOP (lg+) ── */}
+        <section className="hidden lg:block relative w-full overflow-hidden lg:min-h-[560px]">
+          <div className="absolute inset-0">
+            <Image
+              src="/images/c414414c44e5a76a11e841db88e91a23.jpg"
+              alt="Ann's salon interior — Clayton VIC"
+              fill
+              className="object-cover object-center"
+            />
+          </div>
+          <div
+            className="absolute inset-0"
+            style={{
+              background: "linear-gradient(to bottom, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0.35) 100%)",
+            }}
+          />
+          <div className="absolute inset-0" style={{ backgroundColor: "rgba(0,0,0,0.25)" }} />
+          <div className="relative z-10 flex items-center justify-start min-h-[560px]">
+            <div className="flex flex-col items-start justify-center px-16 py-20 text-left max-w-xl">
+              <h2
+                className="text-white font-black uppercase leading-none"
+                style={{
+                  fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif",
+                  fontSize: "clamp(2rem, 4.5vw, 3.5rem)",
+                  letterSpacing: "-0.02em",
+                  lineHeight: 1.05,
+                }}
+              >
+                YOUR BEST LOOK
+                <br />
+                STARTS HERE.
+                <br />
+                BOOK TODAY.
+              </h2>
+              <p
+                className="text-white mt-6 text-sm leading-relaxed opacity-90 max-w-sm"
+                style={{ fontFamily: "Arial, sans-serif" }}
+              >
+                Whether it&apos;s a fresh cut, flawless brows, or a full glam look —
+                Ann&apos;s is your private sanctuary for beauty in Clayton, VIC.
+                Walk in as you are. Walk out as your best self.
+              </p>
+              <Link href="/contact_us" title="Contact Ann's salon">
+                <button
+                  className="mt-8 border-2 border-white text-white font-black text-xs px-8 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap cursor-pointer"
+                  style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
+                >
+                  CONTACT US
+                </button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* ── CONTACT BANNER — MOBILE / TABLET ── */}
+        <section className="flex lg:hidden flex-col w-full" style={{ backgroundColor: "#111111" }}>
+          <div className="relative w-full" style={{ height: "80vw", minHeight: "260px", maxHeight: "420px" }}>
+            <Image
+              src="/images/c414414c44e5a76a11e841db88e91a23.jpg"
+              alt="Ann's salon interior"
+              fill
+              className="object-cover object-center"
+            />
+            <div className="absolute inset-0" style={{ backgroundColor: "rgba(0,0,0,0.35)" }} />
+          </div>
+          <div className="flex flex-col items-center text-center px-8 py-12" style={{ backgroundColor: "#000000" }}>
+            <h2
+              className="text-white font-black uppercase leading-none"
+              style={{
+                fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif",
+                fontSize: "clamp(1.8rem, 8vw, 2.8rem)",
+                letterSpacing: "-0.02em",
+                lineHeight: 1.05,
+              }}
             >
-              CONTACT US
-            </button>
+              YOUR BEST LOOK
+              <br />
+              STARTS HERE.
+            </h2>
+            <p
+              className="text-white mt-5 text-sm leading-relaxed opacity-80 max-w-xs"
+              style={{ fontFamily: "Arial, sans-serif" }}
+            >
+              Ann&apos;s is your private sanctuary for beauty in Clayton, VIC.
+              Walk in as you are. Walk out as your best self.
+            </p>
+            <Link href="/contact_us" title="Contact Ann's salon">
+              <button
+                className="mt-8 border-2 border-white text-white font-black text-xs px-8 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap cursor-pointer"
+                style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
+              >
+                CONTACT US
+              </button>
             </Link>
           </div>
-        </div>
-      </section>
- 
-      {/* ── NEW VISION MOBILE / TABLET ── */}
-      <section className="flex lg:hidden flex-col w-full" style={{ backgroundColor: "#111111" }}>
-        {/* Image — top */}
-        <div className="relative w-full" style={{ height: "80vw", minHeight: "260px", maxHeight: "420px" }}>
-          <Image
-            src="/images/c414414c44e5a76a11e841db88e91a23.jpg"
-            alt="TONI&GUY salon interior"
-            fill
-            className="object-cover object-center"
-          />
-          
-          {/* Dark overlay on image */}
-          <div className="absolute inset-0" style={{ backgroundColor: "rgba(0,0,0,0.35)" }} />
-        </div>
- 
-        {/* Text — bottom on dark bg */}
-        <div className="flex flex-col items-center text-center px-8 py-12" style={{ backgroundColor: "#000000" }}>
-          <h2
-            className="text-white font-black uppercase leading-none"
-            style={{
-              fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif",
-              fontSize: "clamp(1.8rem, 8vw, 2.8rem)",
-              letterSpacing: "-0.02em",
-              lineHeight: 1.05,
-            }}
-          >
-            NEW VISION. NEW ENERGY.
-            <br />
-            NEW EDITION.
-          </h2>
-          <p
-            className="text-white mt-5 text-sm leading-relaxed opacity-80 max-w-xs"
-            style={{ fontFamily: "Arial, sans-serif" }}
-          >
-            Revitalise your hair with our new Hair Therapy experience, delivered
-            by experts in a TONI&amp;GUY salon near you.
-          </p>
-          <Link href={"/contact_us"} title='Contact us page'>
-          <button
-            className="mt-8 border-2 border-white text-white font-black text-xs px-8 py-3 uppercase tracking-widest hover:bg-white hover:text-black transition-colors whitespace-nowrap cursor-pointer"
-            style={{ fontFamily: "'Arial Black', 'Arial Bold', Arial, sans-serif" }}
-          >
-            CONTACT US
-          </button>
-          </Link>
-        </div>
-      </section>
+        </section>
       </div>
-      <Footer/>
+
+      <Footer />
     </div>
   )
 }
 
 export default page
-
 // "use client";
 // import Footer from '@/components/Footer'
 // import Header from '@/components/Header'
