@@ -464,7 +464,7 @@ export default function ReviewsPage() {
             <div className="flex flex-col gap-4">
               {/* Google review CTA */}
               <a
-                href="https://maps.app.goo.gl/iQ4hG5RH142W3svY9"
+                href="https://maps.app.goo.gl/dCBNefeX4W1UVzG86"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center justify-between px-10 py-7 font-black uppercase text-base tracking-widest transition-all hover:brightness-110 hover:scale-[1.02]"
@@ -487,7 +487,7 @@ export default function ReviewsPage() {
                 {[
                   { icon: "⭐", label: `${totalReviews}+ Reviews` },
                   { icon: "🏆", label: "5-Star Rated" },
-                  { icon: "📍", label: "Mumbai Studio" },
+                  { icon: "📍", label: "Clayton Studio, Australia" },
                 ].map((b) => (
                   <div
                     key={b.label}

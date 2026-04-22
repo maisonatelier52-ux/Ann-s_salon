@@ -991,7 +991,7 @@ export default function BookingPage() {
           <div className="flex items-center gap-4 mb-6">
             <div className="h-px w-10" style={{ backgroundColor: "#c9a96e" }} />
             <span className="uppercase text-xs tracking-[0.4em]" style={{ fontFamily: "Georgia, serif", color: "#c9a96e" }}>
-              Private Studio · Dahisar East, Mumbai
+              Private Studio · Dandenong Rd Clayton Australia
             </span>
           </div>
           <h1
@@ -1467,7 +1467,7 @@ export default function BookingPage() {
               { icon: "🔒", label: "Private Studio", sub: "One client at a time" },
               { icon: "⏱", label: "No Waiting", sub: "Appointment-only" },
               { icon: "✦", label: "1-on-1 Service", sub: "Full attention" },
-              { icon: "📍", label: "Dahisar East", sub: "Mumbai, MH 400068" },
+              { icon: "📍", label: "Dahisar East", sub: "Dandenong Rd Clayton Australia" },
             ].map((b) => (
               <div key={b.label} className="flex flex-col gap-2">
                 <span className="text-2xl">{b.icon}</span>
